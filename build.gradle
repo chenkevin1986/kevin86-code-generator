@@ -1,0 +1,20 @@
+group 'com.kevin86'
+version '1.0.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.freemarker:freemarker:2.3.23'
+    compile 'com.alibaba:druid:1.1.5'
+    compile 'commons-dbutils:commons-dbutils:1.7'
+    compile 'commons-pool:commons-pool:1.6'
+    compile 'mysql:mysql-connector-java:5.1.45'
+    compile "org.apache.commons:commons-lang3:3.4"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
